@@ -1,0 +1,854 @@
+@import url(http://fonts.googleapis.com/css?family=Lato);
+@import url(http://fonts.googleapis.com/css?family=Fjalla+One);
+@import url(http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:400,700,300,200);
+
+body {
+    margin: 0;
+    background: url('../images/background1.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    overflow: hidden !important;
+}
+
+.container {
+    background-attachment: fixed;
+    background-size: cover;
+    overflow: hidden;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+.introduction {
+    height: 100vh;
+}
+
+.navbar {
+}
+
+
+
+.navbar ul {
+    padding: 20px;
+    list-style-type: none;
+    border-bottom: 1px solid #eee;
+}
+
+.navbar ul li {
+    display: inline;
+    border-right: 1px solid #eee;
+}
+
+.navbar>ul>li>a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #333;
+}
+
+.about {
+    margin: 0;
+    min-height: 1000px;
+    background-color: #000;
+}
+
+.event {
+    min-height: 1000px;
+    margin: 0;
+}
+
+.welcome {
+}
+
+.welcome * {
+    font-family: 'Lato';
+    text-transform: uppercase;
+    margin: 0px;
+    line-height: 1em;
+    margin-bottom: 20px;
+}
+
+.learn-more {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.learn-more a {
+    font-weight: bold;
+    margin: auto;
+    margin-top: 20px;
+    border: 5px solid;
+    border-color: #fde914;
+    width: 200px;
+    font-size: 25px;
+    display: inline-block;
+    color: #fde914;
+    padding: 10px;
+}
+
+.learn-more a:hover {
+    background-color: #fde914;
+    color: black;
+}
+
+.welcome h1 {
+    font-family: 'Fjalla One';
+    font-size: 150px;
+    color: white;
+    opacity:0.9;
+}
+
+.welcome h2 {
+    font-weight: bold;
+    letter-spacing: 3px;
+    font-size: 25px;
+    color: #fde914;
+    opacity:0.9;
+}
+
+.welcome h4 {
+    font-weight: bold;
+    letter-spacing: 8px;
+    margin-top: 10px;
+    font-size: 15px;
+    color: white;
+    opacity:0.9;
+}
+@CHARSET "ISO-8859-1";
+/* Reset CSS
+ * --------------------------------------- */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,
+form,fieldset,input,textarea,p,blockquote,th,td {
+    padding: 0;
+    margin: 0;
+}
+a{
+    text-decoration:none;
+}
+table {
+    border-spacing: 0;
+}
+fieldset,img {
+    border: 0;
+}
+address,caption,cite,code,dfn,em,strong,th,var {
+    font-weight: normal;
+    font-style: normal;
+}
+strong{
+    font-weight: bold;
+}
+ol,ul {
+    list-style: none;
+    margin:0;
+    padding:0;
+}
+caption,th {
+    text-align: left;
+
+}
+h1,h2,h3,h4,h5,h6 {
+    font-weight: normal;
+    font-size: 100%;
+    margin:0;
+    padding:0;
+    color:#444;
+}
+q:before,q:after {
+    content:'';
+}
+abbr,acronym { border: 0;
+}
+
+
+/* Custom CSS
+ * --------------------------------------- */
+body{
+    font-family: arial,helvetica;
+    color: #333;
+    color: rgba(0,0,0,0.5);
+}
+.wrap{
+    margin-left: auto;
+    margin-right: auto;
+    width: 960px;
+    position: relative;
+}
+h1{
+    font-size: 6em;
+}
+p{
+    font-size: 2em;
+}
+.intro p{
+    width: 50%;
+    margin: 0 auto;
+    font-size: 1.5em;
+}
+.section{
+    text-align:center;
+}
+#menu li {
+    display:inline-block;
+    margin: 10px;
+    color: #000;
+    background:#fff;
+    background: rgba(255,255,255, 0.5);
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+#menu li.active{
+    background:#666;
+    background: rgba(0,0,0, 0.5);
+    color: #fff;
+}
+#menu li a{
+    text-decoration:none;
+    color: #000;
+}
+#menu li.active a:hover{
+    color: #000;
+}
+#menu li:hover{
+    background: rgba(255,255,255, 0.8);
+}
+#menu li a,
+#menu li.active a{
+    padding: 9px 18px;
+    display:block;
+}
+#menu li.active a{
+    color: #fff;
+}
+#menu{
+    position:fixed;
+    top:0;
+    left:0;
+    height: 40px;
+    z-index: 70;
+    width: 100%;
+    padding: 0;
+    margin:0;
+}
+.twitter-share-button{
+    position: fixed;
+    z-index: 99;
+    right: 149px;
+    top: 9px;
+}
+#download{
+    margin: 10px 0 0 0;
+    padding: 15px 10px;
+    color: #fff;
+    text-shadow: 0 -1px 0 rgba(0,0,0,0.25);
+    background-color: #49afcd;
+    background-image: -moz-linear-gradient(top, #5bc0de, #2f96b4);
+    background-image: -ms-linear-gradient(top, #5bc0de, #2f96b4);
+    background-image: -webkit-gradient(linear,0 0,0 100%,from( #5bc0de),to( #2f96b4));
+    background-image: -webkit-linear-gradient(top, #5bc0de, #2f96b4);
+    background-image: -o-linear-gradient(top, #5bc0de, #2f96b4);
+    background-image: linear-gradient(top, #5bc0de, #2f96b4);
+    background-repeat: repeat-x;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#5bc0de', endColorstr='#2f96b4', GradientType=0);
+    border-color: #2f96b4 #2f96b4 #1f6377;
+    border-color: rgba(0,0,0,.1) rgba(0,0,0,.1) rgba(0,0,0,.25);
+    filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    vertical-align: middle;
+    cursor: pointer;
+    display: inline-block;
+    -webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,0.2),0 1px 2px rgba(0,0,0,0.05);
+    -moz-box-shadow: inset 0 1px 0 rgba(255,255,255,0.2),0 1px 2px rgba(0,0,0,0.05);
+    box-shadow: inset 0 1px 0 rgba(255,255,255,0.2),0 1px 2px rgba(0,0,0,0.05);
+}
+#download a{
+    text-decoration:none;
+    color:#fff;
+}
+#download:hover{
+    text-shadow: 0 -1px 0 rgba(0,0,0,.25);
+    background-color: #2F96B4;
+    background-position: 0 -15px;
+    -webkit-transition: background-position .1s linear;
+    -moz-transition: background-position .1s linear;
+    -ms-transition: background-position .1s linear;
+    -o-transition: background-position .1s linear;
+    transition: background-position .1s linear;
+}
+#infoMenu{
+    height: 20px;
+    color: #f2f2f2;
+    position:fixed;
+    z-index:70;
+    bottom:0;
+    width:100%;
+    text-align:right;
+    font-size:0.9em;
+    padding:8px 0 8px 0;
+}
+#infoMenu ul{
+    padding: 0 40px;
+}
+#infoMenu li a{
+    display: block;
+    margin: 0 22px 0 0;
+    color: #333;
+}
+#infoMenu li a:hover{
+    text-decoration:underline;
+}
+#infoMenu li{
+    display:inline-block;
+    position:relative;
+}
+#examplesList{
+    display:none;
+    background: #282828;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    padding: 20px;
+    float: left;
+    position: absolute;
+    bottom: 29px;
+    right: 0;
+    width:638px;
+    text-align:left;
+}
+#examplesList ul{
+    padding:0;
+}
+#examplesList ul li{
+    display:block;
+    margin: 5px 0;
+}
+#examplesList ul li a{
+    color: #BDBDBD;
+    margin:0;
+}
+#examplesList ul li a:hover{
+    color: #f2f2f2;
+}
+#examplesList .column{
+    float: left;
+    margin: 0 20px 0 0;
+}
+#examplesList h3{
+    color: #f2f2f2;
+    font-size: 1.2em;
+    margin: 0 0 15px 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+    -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1);
+    -moz-box-shadow: 0 1px 0 rgba(255,255,255,0.1);
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1);
+    padding: 0 0 5px 0;
+}
+
+
+
+/* Demos Menu
+ * --------------------------------------- */
+#demosMenu{
+    position:fixed;
+    bottom: 10px;
+    right:10px;
+    z-index: 999;
+}
+
+#section2 {
+    margin: 0;
+    background-color: #eee;
+}
+
+#section5 {
+    background-color: rgba(51,51,51,0.9);
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    height: 30%;
+    background-color: #222;
+    width: 100%;
+}
+
+.register-form {
+    position: absolute;
+    top: 15%;
+    right: 2.5%;
+    min-width: 350px;
+    width: 45%;
+    margin: auto;
+    background-color: #333;
+    height: 65%;
+    box-shadow: 0 0 25px #555;
+}
+
+.our-place {
+    position: absolute;
+    top: 15%;
+    left: 2.5%;
+    min-width: 350px;
+    width: 45%;
+    margin: auto;
+    background-color: #333;
+    height: 65%;
+    box-shadow: 0 0 25px #555;
+}
+
+.reg-header {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+    padding: 10px;
+    padding-left: 20px;
+    text-transform: uppercase;
+    color: #fde914;
+    text-align: left;
+    border-bottom: 2px solid #fde914;
+}
+
+
+.register-form>form {
+    margin-top: 20px;
+}
+
+.register-form>form>input[type="text"], .register-form>form>textarea {
+    outline: #fde914;
+    border: 0 solid #fde914;
+    box-shadow: 0 0 5px #111;
+    padding: 5px;
+    font-size: 20px;
+    background-color: rgba(0,0,0,0.5);;
+    color: #fde914;
+    width: 80%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+.register-form>form>input[type="submit"] {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    text-transform: uppercase;
+    display: block;
+    margin-left: 9%;
+    border: 0 solid #fde914;
+    box-shadow: 0 0 15px #fde914;
+    padding: 10px;
+    font-size: 25px;
+    background-color: #fde914;
+    color: #000;
+    width: 82%;
+    margin-top: 10px;
+}
+
+.register-form>form>label {
+    display: block;
+    text-align: left;
+    padding-left: 10%;
+    color: #fde914;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+.main-footer {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    height: 10%;
+}
+
+#section2 {
+    background-color: rgba(51,51,51,0.9);
+}
+
+.about-paras {
+    width: 50%;
+    position: absolute;
+    top: 10%;
+    left: 5%;
+}
+
+.about-cover {
+    width: 440px;
+    height: 350px;
+    background-repeat: no-repeat;
+    position: absolute;
+    background: url('../images/sportex.png');
+    top: 12%;
+    right: 5%;
+    background-size: cover;
+    box-shadow: 0 0 20px #555;
+}
+
+.about-paras h1 {
+    color: #fde914;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    text-transform: uppercase;
+    margin-left: 30px;
+    text-align: left;
+    font-size: 65px;
+    font-weight: bold;
+}
+
+.about-paras p {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    color: #ddd;
+    text-align: left;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 25px;
+    margin: 30px;
+}
+
+.competition {
+    width: 100%;
+    position: absolute;
+    height: 29.5%;
+    bottom: 2%;
+    background: url('../images/background1.jpg');
+    background-position: 20% 50%;
+    box-shadow: 0 0 20px #555;
+}
+
+.hide {
+    visibility: hidden;
+}
+
+.navbar {
+    width: 100%;
+    height: 70px;
+    position: fixed;
+    top: 0;
+    box-shadow: 0 0 20px #555;
+    background-color: #ddd;
+    z-index: 100000000;
+}
+
+#section3 {
+    background-color: rgba(51,51,51,0.95);
+}
+
+#section4 iframe {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 100vh;
+    border: 0;
+}
+
+.map-footer {
+    width: 100%;
+    background-color: rgba(224,224,224, 0.5);
+    position: absolute;
+    bottom: 0;
+    height: 100px;
+}
+
+
+.navbar-fixed {
+    width: 100%;
+    height: 65px;
+    top: 0;
+    box-shadow: 0 0 20px #555;
+    position: fixed;
+    background-color: rgba(51,51,51,0.7);
+    z-index: 100000000;
+}
+
+.navbar-static {
+    width: 100%;
+    height: 65px;
+    top: 0;
+    box-shadow: 0 0 20px #555;
+    position: absolute;
+    z-index: 10000;
+    background-color: rgba(51,51,51,0.7);
+}
+
+.navbar-static>ul>li:first-child>a, .navbar-fixed>ul>li:first-child>a {
+    position: relative;
+    top: -10px;
+    font-size: 35px;
+}
+
+
+.navbar-fixed>ul, .navbar-static>ul  {
+    list-style-type: none;
+    margin: 0;
+    padding: 10px;
+    overflow: hidden;
+}
+
+.navbar-fixed>ul>li, .navbar-static>ul>li{
+    float: left;
+    padding: 10px 20px;
+}
+.navbar-fixed>ul>li>a, .navbar-static>ul>li>a {
+    min-width: 50px;
+    display: block;
+    color: #fde914;;
+    font-size: 17px;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    text-transform: uppercase;
+}
+
+.game-box {
+    display: inline-block;
+    position: relative;
+    width: 250px;
+    height: 300px;
+    background-color: #333;
+    box-shadow: 0 0 20px #555;
+    margin: 10px;
+    transition: all 0.5s;
+}
+
+.game-box:hover {
+    -ms-transform: scale(1.1,1.1); /* IE 9 */
+    -webkit-transform: scale(1.1,1.1); /* Chrome, Safari, Opera */
+    transform: scale(1.1,1.1);
+}
+
+.copyrights {
+    color: #fde914;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 20px;
+    position: absolute;
+    bottom: 20px;
+    right: 50px;
+}
+
+.copyrights a {
+    color: #fde914;
+    font-weight: bold;
+}
+
+::selection {
+    background: #fde914; /* WebKit/Blink Browsers */
+    color: black;
+}
+
+
+.slide ul {
+    position: absolute;
+    top: 200px;
+    margin: 0 2vw 0 5vw;
+    text-align: left;
+    background-color: rgba(34,34,34,0.8);
+    height: 40%;
+    width: 85vw;
+    overflow-y: scroll;
+    padding: 30px;
+}
+
+.slide h3 {
+    position: absolute;
+    top: 100px;
+    padding-left: 80px;
+    text-transform: uppercase;
+    font-size: 50px;
+    color: #fde914;
+    text-align: left;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+
+.slide ul li {
+    color: white;
+    line-height: 35px;
+    font-size: 20px;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+.game-box h1 {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    font-size: 40px;
+    color: #333;
+    background-color: #fde914;
+    padding: 10px 0;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+#slide2 {
+    position: relative;
+}
+
+.go-back {
+    font-size: 35px;
+    display: block;
+    padding: 10px 5px;
+    background-color: #fde914;;
+    color: #333;
+    font-weight: bold;
+    text-transform: uppercase;
+    width: 200px;
+    position: relative;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    left: 80%;
+    top: 10%;
+}
+
+.contactid {
+    text-align: left;
+    margin-left: 20px;
+}
+
+.contactid span, .contactid label {
+    font-size: 25px;
+    line-height: 40px;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    color: #fde914;
+}
+
+.contactid label {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.our-place .reg-header {
+    margin-bottom: 20px;
+}
+
+::-webkit-scrollbar {
+    height: 12px;
+    width: 12px;
+    background: #fde914;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #fde914;
+    -webkit-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.75);
+}
+
+::-webkit-scrollbar-corner {
+    background: #000;
+}
+::-webkit-scrollbar-track {
+    background-color: #444;
+}
+
+.fp-controlArrow.fp-prev {
+    left: 15px;
+    width: 0;
+    border-width: 38.5px 34px 38.5px 0;
+    border-color: transparent #fde914 transparent transparent !important;
+}
+
+.fp-controlArrow.fp-next {
+    right: 15px;
+    border-width: 38.5px 0 38.5px 34px;
+    border-color: transparent transparent transparent #fde914 !important;
+}
+
+.slide ul {
+    position: relative;
+    top: 20px;
+}
+
+.register-form a {
+    width: 80%;
+    margin: 10px auto;
+    display: block;
+    padding: 5px 12px;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    background-color: #fde914;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.logo-games {
+    width: 150px;
+    height: 150px;
+    position: relative;
+    top: 40px;
+}
+
+.main-logo {
+    height: 50px;
+    margin-bottom: 0;
+}
+
+.main-logo img {
+    width: 50px;
+    height: 50px;
+    display: inline;
+}
+
+#section1 {
+    background-color: rgba(51,51,51,0.8);
+}
+
+.about-olympiad {
+    width: 40%;
+    position: relative;
+    left: 5%;
+    top: 50px;
+}
+
+.about-olympiad h2 {
+    text-align: left;
+    margin-left: 15px;
+    color: #fde914;
+    font-size: 60px;
+    text-transform: uppercase;
+    font-family: "Yanone Kaffeesatz", sans-serif;
+}
+
+.about-olympiad p {
+    font-size: 24px;
+    color: #fff;
+    font-family: "Yanone Kaffeesatz", sans-serif;
+    text-align: left;
+    margin: 15px 15px;
+}
+
+.main-olympiad-photo {
+    position: absolute;
+    top: 20vh;
+    left:55vw;
+}
+
+.memories {
+    font-size: 35px;
+    display: block;
+    padding: 10px 5px;
+    background-color: #fde914;;
+    color: #333;
+    font-weight: bold;
+    text-transform: uppercase;
+    width: 300px;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    position: absolute;
+    bottom: 5vh;
+    left:65vw;
+}
+
+.olympiad-memories img {
+    max-height: 70%;
+    position: relative;
+    top: 20%;
+}/*
+
+.olympiad-memories {
+    position: absolute;
+    bottom: 5%;
+}
+*/
+.about-olympiad-ul {
+    margin: 0 !important;
+    displaY: inline;
+    top: 0px !important;
+    position: relative;
+    left: 40px;
+    background-color: transparent !important;
+}
